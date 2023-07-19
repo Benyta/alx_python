@@ -4,7 +4,7 @@ number = random.randint(-10000, 10000)
 
 last_digit = abs(number) % 10
 
-message = "The string Last digit of {} is {}"
+message = "Last digit of {} is {}"
 
 if last_digit > 5:
     message += " and is greater than 5"
