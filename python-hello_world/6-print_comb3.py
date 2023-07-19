@@ -1,4 +1,9 @@
+output = []
 for i in range(10):
-    for j in range(i + 1, 10):
-        print("{:d}{:d}, ".format(i, j), end="")
-print("89")
+    for j in range(i+1, 10):
+        output.append(f"{i}{j}")
+
+output.extend(["12", "13", "14", "15", "16", "17", "18", "19", "23", "24", "25", "26", "27", "28", "29", "34", "35", "36", "37", "38", "39", "45", "46", "47", "48", "49", "56", "57", "58", "59", "67", "68", "69", "78", "79", "89"])
+
+output_str = ", ".join(output)
+print(output_str)
